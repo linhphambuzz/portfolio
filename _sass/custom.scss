@@ -1,0 +1,42 @@
+
+@import 'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap';
+
+.accelerator-operator{
+    font-family: "Dancing Script", cursive;
+}
+
+.csite-header{
+  position:relative;
+  overflow:hidden;
+  height:50vw;
+  min-height:400px;
+  max-height:550px;
+  min-width:300px;
+  margin:0;
+  height:120%;
+
+}
+
+.csite-header:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+}
+
+
+
+.page-link {
+    margin-right: 20px;
+    position:absolute;
+    right:20px;
+    top:20px;
+    text-decoration:none;
+    display:flex; 
+    align-self: flex-end;
+}
+

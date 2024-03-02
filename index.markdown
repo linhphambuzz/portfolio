@@ -6,18 +6,18 @@ layout: home
 
 ---
 
-
-
-<div class="container" style=" display: grid;align-items: center;grid-template-columns: 1fr 1.2fr;column-gap: 10px;">
-      <div class="image" style="width:250px; height:auto;">
+<div class="container" style=" display: grid;align-items: center;grid-template-columns: 1fr 1.5fr;column-gap: 10px; background-color: #fff5d7;">
+      <div class="image" style="width:250px; height:auto; padding:15px;">
         <img src="./img/self.jpg" style="border-radius: 20px;">
       </div>
-      <div class="text" style="font-style:Arial;">
-       
-        <p> <em> Coding is my hobby. Now I want to make it my career. Let's walk through my programing experiences! </em>
-        </p>
+      <div class="text">
+        <div class= "accelerator-operator" style="font-size:30px;font-weight:bold; text-align:center;padding:20px">Accelerator Operator - Tech Enthusiast</div>
+        <div style="text-align:center;"> <em> And Now I want to make it my career </em> </div>
       </div>
 </div>
+
+
+
 
 
 <h2> <strong> Survey radiation with Boston Dynamics SPOT robot</strong></h2>

@@ -26,10 +26,11 @@
    display: flex;
    min-height: 100vh;
    flex-direction: column;
+
+  
  }
  
- 
- 
+
  /**
   * Set `margin-bottom` to maintain vertical rhythm
   */
@@ -172,6 +173,8 @@
  
 .container{
     margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
  
  /**
