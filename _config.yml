@@ -51,8 +51,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-exclude:
-  - ._posts/
+
 
 header_pages:
   - about.markdown
+  - gallery.markdown

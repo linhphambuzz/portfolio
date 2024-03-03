@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Advent of Code"
+date:   2024-03-03 00:24:16
+categories: jekyll update
+show: Advent of Code
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+skills: [DSA, Math, Object Oriented Programming]
+no: 3
+---

@@ -1,9 +1,35 @@
+/* 
+  Customed scss writen by Linh Pham 
+  email: lpham@fnal.gov */
+
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875 ;
 
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap';
 
-.accelerator-operator{
-    font-family: "Dancing Script", cursive;
+// set background
+.body, html{
+  height:100%;
 }
+
+// .page-content{
+//   background-image: url(../img/background.jpg) ;
+
+//   /* Full height */
+//   height: 100%; 
+
+//   /* Center and scale the image nicely */
+//   background-position: center;
+//   background-repeat:repeat;
+//   background-size: cover;
+// }
+
+// .accelerator-operator{
+//     font-family: "Dancing Script", cursive;
+// }
+
+
+// custom side-header
 
 .csite-header{
   position:relative;
@@ -14,6 +40,7 @@
   min-width:300px;
   margin:0;
   height:120%;
+  background: url(../img/back.jpg);
 
 }
 
@@ -25,12 +52,10 @@
   bottom:0;
   left:0;
   z-index:-1;
- background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+  
 }
 
-
-
-.page-link {
+.menu-icon {
     margin-right: 20px;
     position:absolute;
     right:20px;
@@ -38,5 +63,113 @@
     text-decoration:none;
     display:flex; 
     align-self: flex-end;
+}
+
+// set background for header,footer
+
+.site-footer, .site-header{
+  background: url(../img/back.jpg);
+}
+
+$content-width:  950px ;
+$base-font-size:   16px;
+// grids 
+
+.grids{
+  // width: $content-width/3;
+  // display:flex;
+  // flex-wrap: wrap;
+  // flex-direction: row;
+  // // flex-basis: 100%;
+  // margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // width: 100%;
+  margin: 0 auto; 
+  
+  
+  // padding: 40px calc((100% - (255px * 3)) / 2);
+}
+
+.grids .col{
+  // display: flex;
+  // flex-direction: column;
+  // height: 250px;
+  // padding: 10px;
+  // align-items: center;
+  
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33.333333%; 
+
+  box-sizing: border-box; 
+  //debug
+  // border: 1px solid black;
+  width:100%;
+  
+}
+
+.col a{
+  color: #111;
+  text-decoration: none;
+  
+  
+  &:visited {
+    color: #111
+  }
+
+  &:hover {
+    color: #111;
+    text-decoration: none;
+    
+  
+  }
+}
+
+.box-heading{
+  background: url(../img/back.jpg) ;
+  display:block; 
+  margin:0;
+  border:0; 
+  // min-width: 220px;
+  position:relative;
+  z-index:20;
+  height: 50px;
+  
+  padding: 20px;
+  text-align: center;
+}
+
+.title{
+  font-size: $base-font-size;
+
+}
+
+
+
+.details{
+  background:#e8e7e5 ;
+  // background: url(../img/3.jpg) 25%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: block;
+  z-index: 20;
+  padding: 15px;
+  text-align: left;
+  // height: 155px;
+
+}
+
+.description,.skill{
+  font-size: $small-font-size;
+}
+
+.description{
+  padding:15px;
+}
+
+.post-link{
+  padding:10px;
 }
 
