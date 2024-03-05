@@ -6,111 +6,131 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875 ;
 
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap';
+// .accelerator-operator{
+//     font-family: "Dancing Script", cursive;
+// }
+
 
 // set background
 .body, html{
   height:100%;
 }
 
+$custom-background: url(../img/coffee.jpg); 
 // .page-content{
-//   background-image: url(../img/background.jpg) ;
-
+//   // background-image: url(../img/coffee.jpg) ;
 //   /* Full height */
 //   height: 100%; 
-
 //   /* Center and scale the image nicely */
 //   background-position: center;
 //   background-repeat:repeat;
 //   background-size: cover;
 // }
 
-// .accelerator-operator{
-//     font-family: "Dancing Script", cursive;
-// }
 
 
 // custom side-header
-
 .csite-header{
   position:relative;
   overflow:hidden;
-  height:50vw;
+  height:40vw;
   min-height:400px;
   max-height:550px;
   min-width:300px;
   margin:0;
-  height:120%;
-  background: url(../img/back.jpg);
+  height:100%;
+  // border:1px solid black;
+  margin-bottom: 5px;
 
 }
 
-.csite-header:after{
-  content:"";
-  width:100%;
-  height:100%;
-  position:absolute;
-  bottom:0;
-  left:0;
+// .csite-header:after{
+//   content:"";
+//   width:100%;
+//   height:100%;
+//   position:absolute;
+//   bottom:0;
+//   left:0;
+//   z-index:-1;
+// }
+
+.header-img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: .4;
   z-index:-1;
+}
+
+.self-quote{
+  
+  z-index:0;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+.portrait{
+  // z-index: -1;
+  width: 60%;
+  height:60%;
+  margin-top: 3em;
+  margin-left: -190px;
   
 }
+.quote-box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5em;
+  padding: 10px;
 
+.l-quote{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive ;
+}
+.small-quote{
+  // font-size: $small-font-size;
+}
+}
 .menu-icon {
     margin-right: 20px;
-    position:absolute;
-    right:20px;
-    top:20px;
+    position:relative;
+    // right:20px;
+    // top:20px;
     text-decoration:none;
     display:flex; 
     align-self: flex-end;
 }
 
+a.page-link:hover{
+  transform: scale(1.02);
+
+}
 // set background for header,footer
 
-.site-footer, .site-header{
-  background: url(../img/back.jpg);
-}
+// .site-footer, .site-header{
+//   background: url(../img/back.jpg);
+// }
 
 $content-width:  950px ;
 $base-font-size:   16px;
+
 // grids 
 
-.grids{
-  // width: $content-width/3;
-  // display:flex;
-  // flex-wrap: wrap;
-  // flex-direction: row;
-  // // flex-basis: 100%;
-  // margin-bottom: 30px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  // width: 100%;
-  margin: 0 auto; 
-  
-  
-  // padding: 40px calc((100% - (255px * 3)) / 2);
-}
 
-.grids .col{
-  // display: flex;
-  // flex-direction: column;
-  // height: 250px;
-  // padding: 10px;
-  // align-items: center;
+.row{
   
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 33.333333%; 
-
   box-sizing: border-box; 
-  //debug
   // border: 1px solid black;
   width:100%;
+  margin-bottom: 2em;
+  padding: 0 10px;
   
 }
 
-.col a{
+a{
   color: #111;
   text-decoration: none;
   
@@ -122,44 +142,46 @@ $base-font-size:   16px;
   &:hover {
     color: #111;
     text-decoration: none;
-    
-  
+    opacity: .8;
+    transform: scale(1.02);
+
   }
 }
 
-.box-heading{
-  background: url(../img/back.jpg) ;
-  display:block; 
-  margin:0;
-  border:0; 
-  // min-width: 220px;
-  position:relative;
-  z-index:20;
-  height: 50px;
-  
-  padding: 20px;
-  text-align: center;
-}
 
 .title{
   font-size: $base-font-size;
 
 }
-
-
+.post-link{
+  display: block;
+  
+  &:hover{
+    transform: scale(1.02);
+  }
+  
+}
+.row{
+  display: block;
+  position:relative;
+  background: #FFDE59;
+  
+}
 
 .details{
-  background:#e8e7e5 ;
-  // background: url(../img/3.jpg) 25%;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  display: block;
+  
   z-index: 20;
   padding: 15px;
   text-align: left;
-  // height: 155px;
+  position: relative;
+  top: 10px;
+  left: 10px; 
+  padding: 5px;
+  opacity: 1;
+  // display: none;
 
 }
+
 
 .description,.skill{
   font-size: $small-font-size;
@@ -169,7 +191,4 @@ $base-font-size:   16px;
   padding:15px;
 }
 
-.post-link{
-  padding:10px;
-}
 
