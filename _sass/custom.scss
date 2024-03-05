@@ -44,15 +44,9 @@ $custom-background: url(../img/coffee.jpg);
 
 }
 
-// .csite-header:after{
-//   content:"";
-//   width:100%;
-//   height:100%;
-//   position:absolute;
-//   bottom:0;
-//   left:0;
-//   z-index:-1;
-// }
+.site-title:hover, .page-link:hover{
+  text-decoration: underline;
+}
 
 .header-img{
   height: 100%;
@@ -183,7 +177,7 @@ a{
 }
 
 
-.description,.skill{
+.description{
   font-size: $small-font-size;
 }
 
