@@ -105,18 +105,19 @@
   * Links
   */
  a {
-   color: $brand-color;
+   color: $grey-color;
    text-decoration: none;
  
    &:visited {
-     color: darken($brand-color, 15%);
+    // color: darken($grey-color, 15%);
+    color: $grey-color-dark;
    }
  
-   &:hover {
-     color: $text-color;
-    //  text-decoration: underline;
+  //  &:hover {
+  //    color: $text-color;
+  //   //  text-decoration: underline;
   
-   }
+  //  }
  
    .social-media-list &:hover {
      text-decoration: none;

@@ -24,7 +24,7 @@ permalink: /gallery/
 
 Summer of 2019, my junior year of college, I was selected to participate in a one-week workshop for computational modeling that targets Physics undergraduate and graduate students who're interested in computing for physics research. This is hosted by the University of Southern Missisipi. 
 
-<img src="./img/n-NSF_0137.jpg" >
+<img src="/img/n-NSF_0137.jpg" >
 
 This workshop is where I first got introduced to <strong>Python</strong> and Linux Bash scripting. I was also granted a Linux computer at the end. And just like that, my coding journey starts! 
 
@@ -34,7 +34,7 @@ Summer of 2020, I interned at Fermilab working on a reconstruction project to ev
 
 I was introduced to [ROOT, a C++ framework from CERN](https://root.cern/) to analyze generated data. I learn about Object Orirented Programming in C++, and gain substantial knowledge about memory allocating for low level language programming.
 
-<img src="./img/1709210270620-fcbfbad4-7b32-4690-9f3c-f8a839842c76_1.jpg">
+<img src="/img/1709210270620-fcbfbad4-7b32-4690-9f3c-f8a839842c76_1.jpg">
 
 The presentation of this project at the Gulf Coast Undergraduate got me the first prize in the Physics panel! 
 

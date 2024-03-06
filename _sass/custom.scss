@@ -4,52 +4,48 @@
 
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875 ;
+$content-width:  950px ;
+$grey-color:       #828282 ;
+$grey-color-light: lighten($grey-color, 40%) ;
+$grey-color-dark:  darken($grey-color, 25%) !default;
 
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap';
-// .accelerator-operator{
-//     font-family: "Dancing Script", cursive;
-// }
-
-
-// set background
-.body, html{
-  height:100%;
-}
-
-$custom-background: url(../img/coffee.jpg); 
-// .page-content{
-//   // background-image: url(../img/coffee.jpg) ;
-//   /* Full height */
-//   height: 100%; 
-//   /* Center and scale the image nicely */
-//   background-position: center;
-//   background-repeat:repeat;
-//   background-size: cover;
-// }
-
-
 
 // custom side-header
-.csite-header{
+.custom-site-header{
   position:relative;
-  overflow:hidden;
+  // overflow:hidden;
   height:40vw;
   min-height:400px;
   max-height:550px;
   min-width:300px;
   margin:0;
   height:100%;
-  // border:1px solid black;
   margin-bottom: 5px;
 
 }
+/*no border bottom on homepage*/
+.custom-site-header .site-header{
+  border-bottom:none;
+  // no background for sticky header in home
+  background: none;
+}
 
+.site-title, .site-nav{
+  color: $grey-color-dark;
+ 
+}
 .site-title:hover, .page-link:hover{
   text-decoration: underline;
 }
 
+/*wrapper for customed header*/
+.custom-wrapper{
+  margin:auto;
+}
+
 .header-img{
-  height: 100%;
+  height: 95%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -58,112 +54,102 @@ $custom-background: url(../img/coffee.jpg);
 }
 
 .self-quote{
-  
   z-index:0;
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-left: 5px;
-}
-.portrait{
-  // z-index: -1;
-  width: 60%;
-  height:60%;
-  margin-top: 3em;
-  margin-left: -190px;
+  margin-right: 5em;
   
 }
+/*picture*/
+.portrait{
+  width: 45%;
+  height:45%;
+  margin-top: 10px;
+}
+/*quote next to my picture*/
 .quote-box{
   display: flex;
   flex-direction: column;
   margin-top: 3.5em;
-  padding: 10px;
-
+  padding: 5px;
+}
 .l-quote{
   font-size: 50px;
   font-weight: 700;
   font-family: "Dancing Script", cursive ;
 }
-.small-quote{
-  // font-size: $small-font-size;
-}
-}
+
+/*menu-icon for navigation*/
 .menu-icon {
     margin-right: 20px;
     position:relative;
-    // right:20px;
-    // top:20px;
     text-decoration:none;
     display:flex; 
     align-self: flex-end;
 }
 
-a.page-link:hover{
-  transform: scale(1.02);
-
-}
-// set background for header,footer
-
-// .site-footer, .site-header{
-//   background: url(../img/back.jpg);
-// }
-
-$content-width:  950px ;
-$base-font-size:   16px;
-
-// grids 
-
-
-.row{
-  
-  box-sizing: border-box; 
-  // border: 1px solid black;
-  width:100%;
-  margin-bottom: 2em;
-  padding: 0 10px;
-  
-}
-
-a{
-  color: #111;
+/* anchor element overidding*/
+a, a .details{
+  color:$grey-color-dark;
   text-decoration: none;
   
   
   &:visited {
-    color: #111
+    color: $grey-color;
   }
 
   &:hover {
     color: #111;
     text-decoration: none;
-    opacity: .8;
-    transform: scale(1.02);
 
   }
 }
-
 
 .title{
   font-size: $base-font-size;
-
 }
+/*link to project*/
 .post-link{
   display: block;
-  
+  border-radius: 10px;
+  color: #111;
+  opacity: 0;
+  filter: blur(5px); 
+  // transform: translateX(-100%);
+  transition: all 1s;
   &:hover{
     transform: scale(1.02);
+
   }
   
 }
+
+/*scroll animation*/ 
+.show{
+  opacity: 1;
+  filter: blur(0); 
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+  .post-link {
+    transition:none; 
+  }
+}
+/*row allocation for projects*/
 .row{
   display: block;
   position:relative;
-  background: #FFDE59;
-  
+  box-sizing: border-box;
+  width:100%;
+  margin-bottom: 2em;
+  padding: 0 10px;
+  background:hsl(48, 95%, 75%);
+  border-radius: 10px; 
 }
-
+/*details of ech  project*/
 .details{
-  
   z-index: 20;
   padding: 15px;
   text-align: left;
@@ -172,17 +158,41 @@ a{
   left: 10px; 
   padding: 5px;
   opacity: 1;
-  // display: none;
-
 }
 
-
+/*pj description*/
 .description{
   font-size: $small-font-size;
-}
-
-.description{
   padding:15px;
 }
+/*skills box*/
+.skills{
+  position:relative;
+  display:flex; 
+  padding: 10px 15px;
+  justify-content: center;
+  display: none;
+  margin-top: -10px;
+
+}
+/*display skills on hover */
+.post-link:hover .skills{
+  display: flex;
+  opacity: 1;
+  z-index: 20;
+  transition: all 1s;
+}
+button{ 
+  color:#111;
+  padding: 5px;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow: hidden;
+  perspective: 1px;
+  border-radius: 5px;
+  line-height: 23px;
+}
+
 
 
