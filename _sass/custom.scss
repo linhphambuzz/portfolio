@@ -15,7 +15,7 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 .custom-site-header{
   position:relative;
   // overflow:hidden;
-  height:40vw;
+  height:50vw;
   min-height:400px;
   max-height:550px;
   min-width:300px;
@@ -25,10 +25,8 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 
 }
 /*no border bottom on homepage*/
-.custom-site-header .site-header{
-  border-bottom:none;
-  // no background for sticky header in home
-  background: none;
+.custom-site-header > .site-header{
+  border-bottom:none; 
 }
 
 .site-title, .site-nav{
@@ -41,38 +39,43 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 
 /*wrapper for customed header*/
 .custom-wrapper{
-  margin:auto;
+  margin: auto;
+ 
 }
 
 .header-img{
-  height: 95%;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   opacity: .4;
   z-index:-1;
+  
 }
 
 .self-quote{
   z-index:0;
-  display:flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-right: 5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr .5fr;
+  grid-column-gap: 0;
+  padding: 10px 50px;
+ 
   
 }
 /*picture*/
 .portrait{
-  width: 45%;
-  height:45%;
-  margin-top: 10px;
+  position: inherit;
+  margin: auto;
+  padding: 10px 20px;
+  
 }
 /*quote next to my picture*/
 .quote-box{
   display: flex;
   flex-direction: column;
-  margin-top: 3.5em;
-  padding: 5px;
+  padding: 10px 20px;
+  justify-content: center;
+ 
 }
 .l-quote{
   font-size: 50px;
@@ -116,7 +119,7 @@ a, a .details{
   color: #111;
   opacity: 0;
   filter: blur(5px); 
-  // transform: translateX(-100%);
+  transform: translateX(-100%);
   transition: all 1s;
   &:hover{
     transform: scale(1.02);

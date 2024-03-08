@@ -10,7 +10,10 @@
     position: sticky;
     position: -webkit-sticky;
     top:0;
-    background: white;
+    // background: white;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    z-index: 1;
   }
   
   .site-title {
