@@ -39,7 +39,10 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 
 /*wrapper for customed header*/
 .custom-wrapper{
-  margin: auto;
+  margin-left: 30px;
+  margin-right:30px;
+  padding-right: 30px;
+  padding-left: 30px;
  
 }
 
@@ -56,10 +59,12 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 .self-quote{
   z-index:0;
   display: grid;
-  grid-template-columns: 1fr 1fr .5fr;
-  grid-column-gap: 0;
-  padding: 10px 50px;
- 
+  grid-template-columns: .3fr 1.5fr 2.5fr .3fr;
+  grid-column-gap: 1em;
+  align-self: center;
+  // padding-right: 30px;
+  // padding-left: 30px;
+  
   
 }
 /*picture*/
@@ -93,8 +98,8 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 }
 
 /* anchor element overidding*/
-a, a .details{
-  color:$grey-color-dark;
+.home a{
+  color:#111;
   text-decoration: none;
   
   

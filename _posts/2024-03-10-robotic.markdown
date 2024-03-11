@@ -1,0 +1,176 @@
+---
+layout: post
+title:  "SPOT LSM survey"
+date: 2024-03-09 15:00:00 -0600
+category: project
+show: SPOT LSM Survey
+description: Radiation data mapping with SPOT the robot.
+skills: [Python, Object Oriented Programming, Docker]
+
+---
+
+Github Repository : [link](https://github.com/fermilab-robotics/SPOT-LSM-survey)
+
+## Objective 
+
+- Mapping radiation data in the beam enclosure with definitive locations given by the localization data from Boston Dynamic SPOT robot. 
+
+
+## What did I do? 
+
+
+### **Implemented Abstract Classes**
+
+- Localization data from SPOT is taken in odom and vision frames. 
+- April Tag, the assisting fiducial system, is also having data obtained in odom and vision frames. 
+- With methods in taking data shared between objects, I chose to implement abstract classes. 
+
+
+{% highlight Python %}
+
+class Localization(metaclass=ABCMeta): 
+    def __init__(self,robot):
+        self.robot=robot
+
+    @abstractclassmethod
+    def xformsnapshot(self):
+        """
+            transform snapshots to convert between frames 
+        """
+        pass 
+
+    @abstractclassmethod
+    def visionxform(self):
+        """
+            transform from VISION to BODY frames 
+        """
+        pass 
+
+    @abstractclassmethod
+    def odomxform(self):
+        """
+            transform from ODOM to BODY frames 
+        """
+        pass
+
+    @abstractclassmethod 
+    def get_time(self):
+        """
+            get timestamps
+        """
+
+{% endhighlight %}
+
+
+- After that, I created classes for the robot, and the fiducial tag and have them inherit from this main abstract class.  
+
+- Similarly, for the digitizer device that takes radiation dose measurement: 
+
+{% highlight Python %}
+
+class Digitizer(metaclass=ABCMeta): 
+    def __init__(self):
+        pass
+
+    @abstractclassmethod
+    def get_config(self):
+        """
+           setup configurations for the device 
+        """
+        pass
+
+    @abstractclassmethod
+    def start(self):
+        """
+            start device 
+        """
+
+    @abstractclassmethod
+    def stop(self):
+        """
+            stop device 
+        """
+{% endhighlight %}
+
+- In this project, implementing abstract classes enforces objects to conform to imperative methods that are established to be necessary, while giving children classes the flexibility to have methods customed to different requirements. 
+
+
+### **Implemented Composite Classes for data collection**
+
+- The `DataAcquisition` class object is composite of robot, fiducial tag, and the radiation reading device objects.
+- I used the `namedtuple` module to enhance code readability, while taking advantages of `tuple`'s properties. Later on, this is very helpful in dimensions analysis.
+
+>> Note: code shown below are for demonstration purposes only, for the full script, plese visit the github repo linked above. 
+
+{% highlight Python %}
+
+Data = namedtuple('data', ['time','data'])
+
+class DataAcquisition(): 
+
+    def __init__(self,robot,tag,digitizer):
+        self.robot=robot
+        self.tag=tag
+        self.digitizer=digitizer
+        self.bot_data=defaultdict(dict)
+        self.tag_data=defaultdict(dict)
+        self.r_data=defaultdict(set)
+
+    def bot_daq(self):
+        """
+            daq for spot data
+        """
+        vision=self.robot.visionxform()
+        odom=self.robot.odomxform()
+        self.data_pts+=1
+        self.bot_data[self.data_pts]['vision']=Data(time,vision)
+        self.bot_data[self.data_pts]['odom']=Data(time,odom)
+    
+     def tag_daq(self):
+        """
+            daq for april tag data 
+        """
+        time=self.tag.get_time()
+        vision=self.tag.visionxform()
+        odom=self.tag.odomxform()
+        self.tag_data[self.data_pts]['vision']=Data(time,vision)
+        self.tag_data[self.data_pts]['odom']=Data(time,odom)
+
+     def d_daq(self):
+        """
+            daq for digitizer data 
+        """
+        if self.digitizer.get_config():
+            dose=self.digitizer.start()
+            time=datetime.datetime.now()
+            self.r_data[self.data_pts]=Data(time,dose)
+
+
+
+{% endhighlight %}
+
+
+- When dimensions analysis of localization data is needed, it's just : 
+
+{% highlight Python %}
+result["spot vision x"]=data['vision'].data.x
+result["spot vision y"]=data['vision'].data.y
+result["spot vision x"]=data['vision'].data.z
+{% endhighlight %}
+
+
+### **Dockerized the application using Docker Compose**
+
+- Both of the digitizers are USB devices, which could not be seen by scripts in normal Docker container. 
+- Instead of passing the volume mount argument everytime I start the container, I automated the mount in the `docker-compose.yaml` file. This also makes setting up configurations for debugging much easier. 
+
+{% highlight yaml %}
+volumes:
+    - /run/udev:/run/udev:ro
+    - /dev/bus/usb:/dev/bus/usb
+{% endhighlight %}
+
+## Summary 
+
+- This project has given me a deeper understanding of Object Oriented Programing in Python.
+- I plan to move data to a RDMS(i.e:Postgres). Having Docker Compose in the project will make the configuration much simpler.

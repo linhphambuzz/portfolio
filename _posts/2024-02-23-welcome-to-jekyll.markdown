@@ -2,11 +2,10 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2024-02-23 13:49:45 -0600
-categories: jekyll update
+category: jekyll update
 show: Intro
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 skills: [a,b,c]
-no: 1
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

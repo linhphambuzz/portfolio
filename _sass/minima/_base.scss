@@ -105,7 +105,7 @@
   * Links
   */
  a {
-   color: $grey-color;
+   color:$brand-color;
    text-decoration: none;
  
    &:visited {
@@ -113,11 +113,11 @@
     color: $grey-color-dark;
    }
  
-  //  &:hover {
-  //    color: $text-color;
-  //   //  text-decoration: underline;
+   &:hover {
+     color: $text-color;
+     text-decoration: underline;
   
-  //  }
+   }
  
    .social-media-list &:hover {
      text-decoration: none;

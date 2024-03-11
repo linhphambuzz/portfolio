@@ -1,0 +1,18 @@
+<!-- anchor link for posts -->
+<a class="post-link" href="{{ post.url | relative_url }}"> 
+          
+    <div class="row">
+      <span class="details">
+        <strong>{{ post.show | escape }} </strong>
+        <div class="description"> {{ post.description | escape }} </div>
+      </span>
+
+      <span class="skills"> 
+        {%- for skill in post.skills -%}
+        <button type="button">{{skill | escape}}</button>
+        {%- endfor -%} 
+      </span>
+
+    </div>
+
+</a>
