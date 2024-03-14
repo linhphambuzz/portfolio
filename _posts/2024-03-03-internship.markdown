@@ -25,10 +25,6 @@ My oral presentation of this project secured the first place at the [Gulf Coast 
 
 Below are the highlight of what I did for the project, presented in no particular order. 
 
-### **Computed Mitigation Matrix**
-
-
-
 ### **Extracted Kinematic Varibles** 
 
 
@@ -170,6 +166,10 @@ TF1 xsec_weighted_flux_func_numu("temp_func", [&](double* x, double*)
 double flux_avg_xsec_numu = xsec_weighted_flux_func_numu.Integral(0., max_energy_numu, FLUX_INTEGRAL_RELATIVE_TOLERANCE);
 
 {% endhighlight %}
+
+### **Computed detector simulation**
+
+>> Note: still looking for the code lost somewhere!
 
 
 ## Summary 

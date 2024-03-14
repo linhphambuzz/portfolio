@@ -273,25 +273,25 @@ img{
   font-size:25px;
 }
 
-.section-detail, .job, .course{
+.section-detail, .job, .course, .award{
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.job-header, .course-header{
+.job-header, .course-header,.award-header{
   display: flex;
   justify-content: flex-start;
  
 }
 
-.job-title, .school, .course-title{
+.job-title, .school, .course-title, .award-title{
   font-size: 20px;
   font-weight: 700;
 }
 
 .job-header >.job-place, 
-.school-details ,.language{
+.school-details ,.language, .award-place{
   font-size: $base-font-size;
   margin-left:20px;
   justify-content: center;

@@ -31,10 +31,10 @@ permalink: /about/
                </div>
               <div class="job-detail">
                <ul>
-                    <li>All duties included as Operator I </li> 
-                    <li>Instruct and train Operator I colleagues with their 2-year on-the-job training program.</li> 
+                    <li>All duties included as Operator I's </li> 
                     <li>Analyze graphs to evaluate tuning methods for the accelerator to increase efficiency. </li> 
-                    <li>Fill in as Crew Chief to provide leadership with monitoring the accelerator complex.</li>
+                    <li>Promptly diagnose and troubleshoot beam-inhibiting issues with set capacity.</li>
+                    <li>Instruct and train Operator I colleagues with their 2-year on-the-job training program.</li> 
                </ul>
               </div> 
           </div>
@@ -47,7 +47,7 @@ permalink: /about/
                     <ul>
                     <li>Operated the accelerators and beam transport system using proprietary software to control accelerator parameters via the accelerator control system.</li> 
                     <li>Completed 6 comprehensive courses on the operations of the accelerator complex. </li> 
-                    <li>Troubleshooted and coordinated with engineering physicists to maintain the operations of electrical, radiation, cryogenic safety systems of beam instrumentations. </li>
+                    <li>Troubleshooted and coordinated with engineering physicists to maintain the operations of all beam-related systems (i.e.: magnets, cryogenic, electronic, controls, radiation, RF, etc) and beam instrumentations.  </li>
                     </ul>
               </div> 
           </div>
@@ -86,31 +86,40 @@ permalink: /about/
 
 <div class="section">
      <div class="section-title">
-          COURSES
+          PROGRAMMING COURSES
      </div>
      <div class="section-detail">
           <div class="course">
                <div class="course-header">
-                    <div class="course-title">Programing for Scientist and Enginners </div>
-                    <div class="language">  C - creditted course </div>
+                    <div class="course-title">Computer Science Fundamentals</div>
+                    <div class="language">  C++ - certificate - February 2024 </div>
                </div>
                <div class="course-detail"> 
-                    <ul> <li> Basic of programming</li></ul>
+                    <ul> 
+                         <li><a href="https://github.com/linhphambuzz/Accelerated-CS"> 🔗 Github Repository  </a></li>
+                         <li>Object Oriented Programmings: OOPs concepts, classes, memory allocations.</li>
+                         <li>Ordered Data Structures: array, linked list, queue, stack, AVL, binary trees, heaps </li>
+                         <li>Unordered Data Structures: hashing, disjoint set, graph algorithms, MST, shortest parh.</li>
+                    </ul>
                </div>
           </div>
           <div class="course">
                <div class="course-header">
-                    <div class="course-title">Computational Physics </div>
-                    <div class="language">  Python - creditted course </div>
+                    <div class="course-title">Computational Physics</div>
+                    <div class="language">  Python - creditted course - Fall 2020 </div>
                </div>
                <div class="course-detail"> 
-                    <ul> <li>Numerical Methods for computing</li></ul>
+                    <ul> 
+                         <li><a href="https://github.com/linhphambuzz/NumericalMethod"> 🔗 Github Repository  </a></li>
+                         <li><a href="https://github.com/linhphambuzz/CubeSimulation/tree/master"> 🔗 Final Project </a></li>
+                         <li>Numerical Methods for computing</li>
+                    </ul>
                </div>
           </div>
           <div class="course">
                <div class="course-header">
                     <div class="course-title">Object Oriented Programming</div>
-                    <div class="language">  Java - auditted course </div>
+                    <div class="language">  Java - auditted course - Spring 2020 </div>
                </div>
                <div class="course-detail"> 
                     <ul> 
@@ -119,24 +128,37 @@ permalink: /about/
                     </ul>
                </div>
           </div>
+          <div class="course">
+               <div class="course-header">
+                    <div class="course-title">Programing for Scientists and Enginners </div>
+                    <div class="language">  C - creditted course - Fall 2018 </div>
+               </div>
+               <div class="course-detail"> 
+                    <ul> <li> Basic of programmings</li></ul>
+               </div>
+          </div>
      </div>
 </div>
 
 
-
 <div class="section">
-      <div class="section-title">
-          SKILLS
+     <div class="section-title">
+          AWARDS
      </div>
      <div class="section-detail">
-     {% highlight yaml%}
-          Languages: Python ,C++ 
-          Database: Sqlite3, Postgresql
-          OS: Linux 
-          Others: Docker, Git, HTML, CSS 
-     {% endhighlight %}
+          <div class="award"> 
+               <div class="award-header">
+                    <div class="award-title"> Academic and Research Excellence Award </div>
+                    <div class="award-place">2021 - UTEP</div>
+               </div>
+               <div class="award-description">Award for outstanding performance to the Department of Physics’s representative student. </div>
+          </div>
+          <div class="award"> 
+               <div class="award-header">
+                    <div class="award-title"> First place: Gulf Coast Undergrad Research Symposium </div>
+                    <div class="award-place">2020 - Rice</div>
+               </div>
+               <div class="award-description">Best oral presentation out of 25 candidates in the Physics panel for the Fermilab internship project. </div>
+          </div>
      </div>
-<div>
-
-    
-    
+</div>

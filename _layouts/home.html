@@ -19,7 +19,7 @@ layout: custom
 
       <!-- Projects -->
     <h2 class="post-list-heading" style="text-align :center;">{{ page.list_title | default: "Projects" }}</h2>
-    <h5 style="text-align :center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+    <h5 style="text-align :center;"> In-depth description of projects presented on resume </h5>
   
     {%- for post in site.posts -%}
       {%- if post.category == "project" -%}
@@ -29,7 +29,7 @@ layout: custom
 
     <!-- Learning Exps -->
     <h2 class="post-list-heading" style="text-align :center;">{{ page.list_title | default: "Learning Experiences" }}</h2>
-    <h5 style="text-align :center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+    <h5 style="text-align :center;"> Small projects with valuable learning outcomes</h5>
     
     {%- for post in site.posts-%}  
       {%- if post.category == "learning-experience" -%}
