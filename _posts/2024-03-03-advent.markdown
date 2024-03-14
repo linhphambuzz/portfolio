@@ -10,8 +10,10 @@ skills: [Data Structure & Algorithms, Python, Object Oriented Programming]
 
 Advent of Code (AOC) was brought to my attention from a message on the slack channel of Fermilab's coding club back when I was still an intern there. Coming from a non-CS background, data structures and algorithm is not a class that's included in my coursework. Solving AOC problems to me was a very fun, productive way that I can learn the fundamental while slowing walking to the more complex ones.  
 
-I have a github repository with a README that categorized topics of what I learned coding through the problems: [Link](https://github.com/linhphambuzz/AdventOfCode)
-
-
+I have a github repository with a README that categorized topics of what I learned coding through the problems:
+<br>
+<div style="font-size:20px;text-align:center;">
+<a href="https://github.com/linhphambuzz/AdventOfCode" > 🔗 Github Repository Link 🔗 </a>
+</div>
 
 

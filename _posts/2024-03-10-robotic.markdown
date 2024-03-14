@@ -9,7 +9,7 @@ skills: [Python, Object Oriented Programming, Docker]
 
 ---
 
-Github Repository : [link](https://github.com/fermilab-robotics/SPOT-LSM-survey)
+<div style="font-size:20px;text-align:center;"> <a href="https://github.com/fermilab-robotics/SPOT-LSM-survey"> 🔗Github Repository🔗</a> </div>
 
 ## Objective 
 

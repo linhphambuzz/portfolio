@@ -12,8 +12,8 @@ no: 2
 
 My oral presentation of this project secured the first place at the [Gulf Coast Undergraduate Symposium](https://gcurs.rice.edu/), hosted by Rice University in 2020. 
 
-- [Official poster](https://lss.fnal.gov/archive/2020/poster/fermilab-poster-20-097-scd.pdf)
-- [Report paper](https://drive.google.com/file/d/1TmzhN8C2uvW_wpQIbdKUbC8oqhjt2y34/view?usp=sharing)
+- 🔗 [Official poster](https://lss.fnal.gov/archive/2020/poster/fermilab-poster-20-097-scd.pdf) 
+- 🔗 [Report paper](https://drive.google.com/file/d/1TmzhN8C2uvW_wpQIbdKUbC8oqhjt2y34/view?usp=sharing) 
 
 ## Objectives 
 

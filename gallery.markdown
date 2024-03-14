@@ -4,15 +4,121 @@ title: Gallery
 permalink: /gallery/
 ---
 
-## MOOC certificates 
-<h2> <strong> Survey radiation with Boston Dynamics SPOT robot</strong></h2>
+<h1 style="text-align:center; font-weight:bold; font-size:30px;"> GALLERY <h1>
 
-- Early on in my career at Fermilab, I join the Robotic Initiative where I take on a project to take SPOT into the beam enclosure to measure beam dose radiation. 
-- I write Python scipts to acquire SPOT's localization data, and obtain the radiation dose reading based off of SPOT's location: [github repo](https://github.com/fermilab-robotics/SPOT-LSM-survey)
+<h2 style="text-align:center; font-family: 'Dancing Script', cursive ;"> 👩‍💻 Accelerator Operator📏  </h2>
 
-- What did I learn ? 
-  - <strong> Python Object Oriented Programming </strong> : the entire project includes multitudes of classes. I choose abstract class for this project because there are repetitive methods that needs to be implemented. 
-  - <strong> Docker </strong>: I like the idea of developing inside a container for consistency. Later on, I incorporate docker-compose into the project, because volume mounting is very convinient for debugging and testing code. 
+<div class="wrapper">
+    <div class="img-holder">
+        <img class="control-room" src="/img/control_room.jpg"> 
+        <div class="control-room-title"> 
+            <span> In the Main Control Room where I can watch over the status of beam instruments while tuning beam to ensure that all the experiments are getting beam with their desired energy and minimal beam loss. </span>
+        </div>
+    </div>
+    <span>
+        Sometimes, we get to go out to the field and inspect beam instruments!
+    </span>
+    <div class="img-holder2">
+        <div class="linac">
+            <img class="linac-img" src="/img/linac.jpg">
+            <div class="subtitle" style="text-align:center" >
+                <em> Inside The Drift Tube Linac RF</em>
+            </div>
+        </div>
+        <div class="minos">
+            <img class="minos" src="/img/minos.jpg">
+            <div class="subtitle" style="text-align:center" >
+                <em>100 ft. underground: Main Injector Neutrino Oscillation Search (MINOS) experiment  </em>
+            </div>
+        </div>
+    </div>
+    <div class="img-holder2">
+        <div class="g-2">
+            <img class="g2-img" src="/img/g-2.jpg">
+            <div class="subtitle" style="text-align:center" >
+                <em> G-2 (g minus 2) Muon experiment  </em>
+            </div>
+        </div>
+        <div class="fermi15">
+                <img src="/img/15fl.jpg">
+                <div class="subtitle" style="text-align:center" >
+                    <em> Fermilab: from the 15th floor  </em>
+                </div>
+        </div>
+    </div>
+    <div class="img-holder3">
+        
+        <img class="fermi" src="/img/fermi.jpg">
+        <div class="subtitle" style="text-align:center" >
+            <em> Inside the main lobby of Wilson Hall, Fermilab </em>
+        </div>
+
+    </div>
+</div>
+
+<div class="wrapper">
+    <h2 style="text-align:center;font-family: 'Dancing Script', cursive ;"> 🧑‍🎓 College 🌟  </h2>
+    <div class="img-holder3">
+        <img class="utep" src="/img/academic_excel.jpg">
+        <div class="subtitle" style="text-align:center" >
+        I represented the Department of Physics in receiving this award from UTEP College of Science (2021)
+        </div>
+    </div>
+    <div class="img-holder3">
+        <img class="rice" src="/img/cup.jpg">
+        <div class="subtitle" style="text-align:center" >
+        The trophy from Rice University for my first place of oral presentation for the Fermilab's internship project (2020)
+        </div>
+    </div>    
+    <div class="img-holder3">
+        <img class="rice" src="/img/rice_1stYr.jpg">
+        <div class="subtitle" style="text-align:center" >
+        This was in 2019, my biophysics research project got selected to be presented at Rice, but this wasn't as successful as the following year. :))
+        </div>
+    </div>  
+    <div class="img-holder3">
+        <img class="nsf" src="/img/NSF_school.jpg">
+        <div class="subtitle" style="text-align:center" >
+            I was selected to participate in the Summer School on Computational Modeling of Disordered Solid, hosted by the Universirty of Southern Missisipi (2019) 
+        </div>
+    </div>
+     <div class="img-holder">
+        <img class="control-room" src="/img/USM.jpg"> 
+        <div class="control-room-title"> 
+            <span> This summer school was a one-week long workshop, where I learned about computational physics and computational modelling for physics research. There, I was introduced to Python, Linux, and Bash scripting.  </span>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <h2 style="text-align:center; font-family: 'Dancing Script', cursive ;">  ✨ Hobby ✨  </h2>
+    <h3>Hiking</h3>
+    <div class="img-holder2">
+        <div class="hiking">
+            <img  src="/img/ep_hike.jpg">
+            <!-- <div class="subtitle" style="text-align:center" >
+                <em> G-2 (g minus 2) Muon experiment  </em>
+            </div> -->
+        </div>
+        <div class="hiking">
+             <img src="/img/hike.jpg">
+                <!-- <div class="subtitle" style="text-align:center" >
+                    <em> Fermilab: from the 15th floor  </em>
+                </div> -->
+        </div>
+    </div>
+    <h3>Painting</h3>
+    <div class="img-holder2">
+        <div class="painting">
+            <img src="/img/paint1.jpg">
+        </div>
+        <div class="painting">
+            <img src="/img/paint2.jpg">
+        </div>
+    </div>
+   
+
+</div>
 
 
 
@@ -20,34 +126,9 @@ permalink: /gallery/
 
 
 
-<h2> <strong> Computational Modeling of Disordered Solids Summer School</strong> </h2>
-
-Summer of 2019, my junior year of college, I was selected to participate in a one-week workshop for computational modeling that targets Physics undergraduate and graduate students who're interested in computing for physics research. This is hosted by the University of Southern Missisipi. 
-
-<img src="/img/n-NSF_0137.jpg" >
-
-This workshop is where I first got introduced to <strong>Python</strong> and Linux Bash scripting. I was also granted a Linux computer at the end. And just like that, my coding journey starts! 
-
-<h2> <strong> Fermilab Internship  </strong> </h2>
-
-Summer of 2020, I interned at Fermilab working on a reconstruction project to evaluate models used for cross-section measurements of Neutrino- Argon interactions. 
-
-I was introduced to [ROOT, a C++ framework from CERN](https://root.cern/) to analyze generated data. I learn about Object Orirented Programming in C++, and gain substantial knowledge about memory allocating for low level language programming.
-
-<img src="/img/1709210270620-fcbfbad4-7b32-4690-9f3c-f8a839842c76_1.jpg">
-
-The presentation of this project at the Gulf Coast Undergraduate got me the first prize in the Physics panel! 
 
 
-<h2><strong> What did I learn in college?</strong></h2>
 
-Programming courses that I took during my undergraduate studies: 
 
-- Programing for Scientist and Enginners: basic of programming in <strong> C </strong> 
-- Object Oriented Programming in <strong>Java</strong>: I asked to audit this course.
-    - Core concepts of OOPs: Encapsulation, Inheritance, Polymorphism, Abstraction. 
-    - Software designs: Factory, Singleton, Facade, etc. 
-- Computational Physics: [gihub repository](https://github.com/linhphambuzz/NumericalMethod)
-    - Numerical Methods technique in <strong> Python </strong>
 
 

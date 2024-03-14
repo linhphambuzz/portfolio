@@ -11,6 +11,8 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 
 @import 'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap';
 
+/* home page */
+
 // custom side-header
 .custom-site-header{
   position:relative;
@@ -202,5 +204,104 @@ button{
   line-height: 23px;
 }
 
+/* gallery page*/
+img{
+  border-radius: 10px;
+}
+.img-holder{
+  display: flex;
+  flex-direction: row ;
+  margin:auto; 
+  margin-bottom: 30px;
+  justify-content: center;
+}
 
+.control-room{
+  width: 50%;
+  height: auto;
+}
 
+.control-room-title{
+  display:flex; 
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.img-holder2{
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+  grid-column-gap: 1em;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+}.img-holder3{
+  margin-bottom: 30px;
+}
+
+/*About page*/
+
+//header 
+.head-about{
+  margin:auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.head-title{
+  font-size: 45px;
+  text-align: center;
+}
+.sm-headtitle{
+  text-align: center;
+  color: grey;
+}
+
+// sections 
+
+.section,.profile{
+  margin-bottom: 30px;
+}
+.section{
+  display:grid;
+  grid-template-columns: 1.5fr 5fr;
+
+}
+.section-title{
+  font-size:25px;
+}
+
+.section-detail, .job, .course{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.job-header, .course-header{
+  display: flex;
+  justify-content: flex-start;
+ 
+}
+
+.job-title, .school, .course-title{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.job-header >.job-place, 
+.school-details ,.language{
+  font-size: $base-font-size;
+  margin-left:20px;
+  justify-content: center;
+  padding:5px;
+  color: grey;
+}
+
+.education{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
