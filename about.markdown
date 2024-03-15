@@ -26,7 +26,7 @@ permalink: /about/
      <div class="section-detail">
           <div class="job">
                <div class="job-header">
-                    <div class="job-title"> Accelerator II </div>
+                    <div class="job-title"> Accelerator Operator II </div>
                     <div class="job-place">Batavia IL | April 2023- Present </div>
                </div>
               <div class="job-detail">
@@ -40,7 +40,7 @@ permalink: /about/
           </div>
           <div class="job">
                <div class="job-header">
-                    <div class="job-title"> Accelerator I </div>
+                    <div class="job-title"> Accelerator Operator I </div>
                     <div class="job-place">Batavia IL | June 2021- April 2023 </div>
                </div>
                 <div class="job-detail">
@@ -89,6 +89,19 @@ permalink: /about/
           PROGRAMMING COURSES
      </div>
      <div class="section-detail">
+          <div class="course">
+               <div class="course-header">
+                    <div class="course-title">Summer School on Disordered Materials</div>
+                    <div class="language">  Python - workshop - Summer 2019 </div>
+               </div>
+               <div class="course-detail"> 
+                    <ul> 
+                         <li> Workshop for scientific computing methods for simulation in physics research hosted by University of Southern Missisipi</li>
+                         <li>Topics: structural optimization algorithms (i.e: Gradient-based, Stochastic based methods), Density Functional Theory, Bash Scripting, Monte Carlos Simulations,etc. </li>
+                         <li><a href="https://boson.usm.edu/HBCU2019/theory.html"> 🔗 Program's Lectures Content </a></li>
+                    </ul>
+               </div>
+          </div>
           <div class="course">
                <div class="course-header">
                     <div class="course-title">Computer Science Fundamentals</div>
