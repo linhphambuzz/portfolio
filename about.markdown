@@ -15,7 +15,7 @@ permalink: /about/
      PROFILE 
      </div>
      <div class="section-details">
-     I'm an Accelerator Operator at Fermi National Accelerator Laboratory. It's a very unique position where we work shifts around the clock in a group setting of 4 to 5 operators per crew. Beam operations require all the magnets, electronic systems, radio frequency systems, cryogenic systems, network computing systems, and many more to work harmonically with each other. For that reason, these systems are attended and tuned continuously by accelerator operators, ensuring beam's optimal efficiency for particle physics research data. We also coordinate with subject-matter experts for troubleshootings of critical issues. In this role, I’ve obtained fundamental knowledge and skills across the diverse systems essential for beam delivery in the Fermilab complex's unique anatomy. Motivated by my interest in computing systems and my relevant experiences, I’m determined to pursue an advanced degree in CS, which will provide me the specialized knowledge and bring me closer to opportunities that use my technical experiences at a more complex level.
+     I'm an Accelerator Operator at Fermi National Accelerator Laboratory. It's a very unique position where we work shifts around the clock in a group setting of 4 to 5 operators per crew. Beam operations require all the magnets, electronic systems, radio frequency systems, cryogenic systems, network computing systems, and many more to work harmonically with each other. For that reason, these systems are attended and tuned continuously by accelerator operators, ensuring the beam's optimal efficiency for particle physics research data. We also coordinate with subject-matter experts for troubleshooting of critical issues. In this role, I’ve obtained fundamental knowledge and skills across the diverse systems essential for beam delivery in the Fermilab complex's unique anatomy. Motivated by my interest in computing systems and my relevant experiences, I’m determined to pursue an advanced degree in CS, which will provide me the specialized knowledge and bring me closer to opportunities that use my technical experiences at a more complex level.
      </div>
 </div>
 
@@ -106,7 +106,7 @@ permalink: /about/
           <div class="course">
                <div class="course-header">
                     <div class="course-title">Computational Physics</div>
-                    <div class="language">  Python - creditted course - Fall 2020 </div>
+                    <div class="language">  Python - credited course - Fall 2020 </div>
                </div>
                <div class="course-detail"> 
                     <ul> 
@@ -119,7 +119,7 @@ permalink: /about/
           <div class="course">
                <div class="course-header">
                     <div class="course-title">Object Oriented Programming</div>
-                    <div class="language">  Java - auditted course - Spring 2020 </div>
+                    <div class="language">  Java - audited course - Spring 2020 </div>
                </div>
                <div class="course-detail"> 
                     <ul> 
@@ -130,11 +130,11 @@ permalink: /about/
           </div>
           <div class="course">
                <div class="course-header">
-                    <div class="course-title">Programing for Scientists and Enginners </div>
-                    <div class="language">  C - creditted course - Fall 2018 </div>
+                    <div class="course-title">Programing for Scientists and Engineers </div>
+                    <div class="language">  C - credited course - Fall 2018 </div>
                </div>
                <div class="course-detail"> 
-                    <ul> <li> Basic of programmings</li></ul>
+                    <ul> <li> Basics of programming</li></ul>
                </div>
           </div>
      </div>
@@ -158,7 +158,7 @@ permalink: /about/
                     <div class="award-title"> First place: Gulf Coast Undergrad Research Symposium </div>
                     <div class="award-place">2020 - Rice</div>
                </div>
-               <div class="award-description">Best oral presentation out of 25 candidates in the Physics panel for the Fermilab internship project. </div>
+               <div class="award-description">Best oral presentation out of 15 candidates in the Physics panel for the Fermilab internship project. </div>
           </div>
      </div>
 </div>

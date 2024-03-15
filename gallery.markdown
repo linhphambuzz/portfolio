@@ -35,7 +35,7 @@ permalink: /gallery/
     <div class="img-holder3">
         <img class="dtl" src="../img/drift_tube.jpg">
         <div class="subtitle" style="text-align:center" >
-            <em> Top view of LINAC (Linear Accelerator) that acceleratates H- beam to 400MeV</em>
+            <em> Top view of LINAC (Linear Accelerator) that accelerates H- beam to 400MeV</em>
         </div>
     </div>
     <div class="img-holder2">

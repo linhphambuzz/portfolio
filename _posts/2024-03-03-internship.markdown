@@ -4,7 +4,7 @@ title:  "Neutrino-Argon target reconstruction simulations"
 date:   2024-03-09 12:31:00 -0600
 category: project
 show: Internship Project - Event Reconstructions
-description: Simulation of Argon target in Neutrio-Argon interactions coupled with using Monte Carlos-based simulations to evaluate reconstruction processes between theoretical models for cross-section measurements.
+description: Simulation of Argon target in Neutrino-Argon interactions coupled with using Monte Carlos-based simulations to evaluate reconstruction processes between theoretical models for cross-section measurements.
 skills: [C++, Object Oriented Programming]
 no: 2
 ---
