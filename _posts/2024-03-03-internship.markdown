@@ -13,13 +13,14 @@ no: 2
 My oral presentation of this project secured the first place at the [Gulf Coast Undergraduate Symposium](https://gcurs.rice.edu/), hosted by Rice University in 2020. 
 
 - 🔗 [Official poster](https://lss.fnal.gov/archive/2020/poster/fermilab-poster-20-097-scd.pdf) 
-- 🔗 [Report paper](https://drive.google.com/file/d/1TmzhN8C2uvW_wpQIbdKUbC8oqhjt2y34/view?usp=sharing) 
+- 🔗 [Report paper](https://drive.google.com/file/d/1TmzhN8C2uvW_wpQIbdKUbC8oqhjt2y34/view?usp=sharing)
+- 🔗 [Gulf Coast Undergraduate Symposium presentation](https://drive.google.com/file/d/1c4PzwvPGO6Im7NlF3KICEV1-m35eQBMJ/view?usp=sharing) 
 
 ## Objectives 
 
 - Average detector simulations were computed using ROOT- a data analysis framework developed by CERN, from the kinematic variable imbalances of outgoing products in Neutrino-Argon interaction event reconstructions. 
 - [GENIE](https://github.com/GENIE-MC)- a Monte Carlo-based simulation for event generators was employed to evaluate event reconstruction processes between two distinct models of the Uboonecode analysis framework. 
-- Differential cross section measurement were computed from final-state particles kinematic variables. 
+- Differential cross section measurements were computed from final-state particles kinematic variables. 
 
 ## What did I do? 
 
@@ -113,7 +114,7 @@ void compute_stvs( const TVector3& p3mu, const TVector3& p3p, float& delta_pT, f
 
 {% endhighlight %}
 
-This function is used to compute all the necessary variables for cross-sections measurement, from muon and the leading proton momentum. 
+This function is used to compute all the necessary variables for cross-sections measurements, from muon and the leading proton momentum. 
 
 ### **Computed cross-section measurements**
 

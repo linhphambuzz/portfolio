@@ -91,19 +91,6 @@ permalink: /about/
      <div class="section-detail">
           <div class="course">
                <div class="course-header">
-                    <div class="course-title">Summer School on Disordered Materials</div>
-                    <div class="language">  Python - workshop - Summer 2019 </div>
-               </div>
-               <div class="course-detail"> 
-                    <ul> 
-                         <li> Workshop for scientific computing methods for simulation in physics research hosted by University of Southern Missisipi</li>
-                         <li>Topics: structural optimization algorithms (i.e: Gradient-based, Stochastic based methods), Density Functional Theory, Bash Scripting, Monte Carlos Simulations,etc. </li>
-                         <li><a href="https://boson.usm.edu/HBCU2019/theory.html"> 🔗 Program's Lectures Content </a></li>
-                    </ul>
-               </div>
-          </div>
-          <div class="course">
-               <div class="course-header">
                     <div class="course-title">Computer Science Fundamentals</div>
                     <div class="language">  C++ - certificate - February 2024 </div>
                </div>
@@ -138,6 +125,19 @@ permalink: /about/
                     <ul> 
                          <li>Core concepts of OOPs: Encapsulation, Inheritance, Polymorphism, Abstraction.</li>
                          <li>Design Pattern: Factory, Singleton, Facade, etc.</li>
+                    </ul>
+               </div>
+          </div>
+          <div class="course">
+               <div class="course-header">
+                    <div class="course-title">Summer School on Disordered Materials</div>
+                    <div class="language">  Python - workshop - Summer 2019 </div>
+               </div>
+               <div class="course-detail"> 
+                    <ul> 
+                         <li> Workshop for scientific computing methods for simulation in physics research hosted by University of Southern Missisipi</li>
+                         <li>Topics: structural optimization algorithms (i.e: Gradient-based, Stochastic based methods), Density Functional Theory, Bash Scripting, Monte Carlos Simulations,etc. </li>
+                         <li><a href="https://boson.usm.edu/HBCU2019/theory.html"> 🔗 Program's Lectures Content </a></li>
                     </ul>
                </div>
           </div>

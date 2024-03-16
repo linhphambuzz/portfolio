@@ -22,8 +22,8 @@ The required-reading application is a Node JS application, with the following st
 
 ### Defined service for the database 
 
-- The database for this application is hosted on another department's network which we have to connect ourt app to using port-forwarding.
-- The problem arised when the Docker host could not see the port where the database was hosted. After a few hours, I discovered about `host.docker.internal: host-gateway`, which exposed the Docker host to the port that we're forwarding to.  
+- The database for this application is hosted on another department's network which we have to connect to using port-forwarding.
+- The problem arised when Docker host could not see the port where the database was hosted. After a few hours, I discovered about `host.docker.internal: host-gateway`, which exposed the Docker host to the port that we're forwarding to.  
 - The `host-gateway` expose combines with the environment variable `PGHOST=host.docker.internal` was the key to solve the port-forwarding problem. 
 
 {% highlight yaml %}
